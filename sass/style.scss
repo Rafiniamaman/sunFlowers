@@ -205,6 +205,38 @@ body {
 		}
 	}
 }
+.offers {
+	.box-offers {
+		margin: 30px 20px;
+		padding: 30px;
+		background-color: rgb(129, 127, 127);
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+		transition: transform 0.3s;
+
+		.offers-tag {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: dark;
+		}
+		p {
+			font-size: 16px;
+		}
+		.box-offers-text {
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+	.box-offers:hover {
+		transform: scale(1.05);
+	}
+	.offers-info a {
+		text-decoration: none;
+	}
+}
 
 @media (min-width: 576px) {
 }
@@ -219,6 +251,23 @@ body {
 			font-size: 2rem;
 		}
 	}
+
+	.offers {
+		.offers-tag {
+			font-size: 22px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 18px;
+		}
+		.box-offers-text {
+			font-size: 18px;
+		}
+	}
+
 }
 @media (min-width: 992px) {
 	.aboutus {
@@ -250,6 +299,21 @@ body {
 				}
 			}
 
+		}
+	}
+	.offers {
+		.offers-tag {
+			font-size: 24px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 20px;
+		}
+		.box-offers-text {
+			font-size: 20px;
 		}
 	}
 
