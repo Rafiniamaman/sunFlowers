@@ -238,6 +238,27 @@ body {
 	}
 }
 
+.portfolio {
+	.carousel-item {
+		position: relative;
+		height: 500px;
+		background-position: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 20px 0 20px 0;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+	.card-img-top {
+		height: 200px;
+	}
+}
+
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {

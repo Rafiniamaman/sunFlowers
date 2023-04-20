@@ -221,6 +221,25 @@ body {
   text-decoration: none;
 }
 
+.portfolio .carousel-item {
+  position: relative;
+  height: 500px;
+  background-position: center;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .card-img-top {
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   .header__heading {
     font-size: 4rem;
