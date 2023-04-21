@@ -263,9 +263,30 @@ body {
 	}
 }
 // contact
+.contact {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em;
+	}
 
+	&__box-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		margin: 0 2em 2em;
 
+		&-text {
+			margin-top: 1em;
+		}
+	}
 
+	&__box-map {
+		display: flex;
+		justify-content: center;
+	}
+}
 
 // footer
 .footer {
@@ -276,7 +297,6 @@ body {
 	text-align: center;
 	background-color: #333;
 	color: #fff;
-
 }
 
 @media (min-width: 576px) {

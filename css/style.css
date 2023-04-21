@@ -246,6 +246,26 @@ body {
   height: 200px;
 }
 
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+.contact__box-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 2em 2em;
+}
+.contact__box-info-text {
+  margin-top: 1em;
+}
+.contact__box-map {
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   display: flex;
   justify-content: center;
