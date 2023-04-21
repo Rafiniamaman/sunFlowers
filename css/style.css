@@ -38,7 +38,7 @@ body {
 .section-heading {
   margin-top: 2em;
   margin-bottom: 1em;
-  color: var(--color-green-dark);
+  color: var(--color-main);
   font-size: 3.4rem;
 }
 
@@ -192,52 +192,68 @@ body {
   padding: 2em 0;
 }
 
-.offers .box-offers {
+.box-offers {
   margin: 30px 20px;
   padding: 30px;
-  background-color: rgb(129, 127, 127);
+  background-color: rgb(241, 237, 237);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s;
 }
-.offers .box-offers .offers-tag {
+.box-offers .offers-tag {
   font-size: 20px;
   font-weight: bold;
 }
-.offers .box-offers h3 {
+.box-offers h3 {
   text-transform: uppercase;
   color: dark;
 }
-.offers .box-offers p {
+.box-offers p {
   font-size: 16px;
 }
-.offers .box-offers .box-offers-text {
+.box-offers .box-offers-text {
   font-weight: bold;
   font-size: 16px;
 }
-.offers .box-offers:hover {
+
+.box-offers:hover {
   transform: scale(1.05);
 }
-.offers .offers-info a {
+
+.offers-info a {
   text-decoration: none;
 }
 
-.portfolio .carousel-item {
+.gallery .carousel-item {
   position: relative;
   height: 500px;
   background-position: center;
 }
-.portfolio .carousel-caption {
+.gallery .carousel-caption {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 20px;
   left: 0;
   right: 0;
   padding: 20px 0 20px 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.portfolio .carousel-indicators {
+.gallery .carousel-indicators {
   padding-bottom: 20px;
 }
-.portfolio .card-img-top {
+.gallery .card-img-top {
   height: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
