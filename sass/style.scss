@@ -239,10 +239,13 @@ body {
 
 // gallery
 .gallery {
+	padding: 2em 2em;
 	.carousel-item {
 		position: relative;
-		height: 500px;
+		max-height: 500px;
+		max-width: 1200px;
 		background-position: center;
+		background-size: cover;
 	}
 	.carousel-caption {
 		position: absolute;
@@ -259,7 +262,26 @@ body {
 		padding-bottom: 20px;
 	}
 	.card-img-top {
-		height: 200px;
+		height: 300px;
+	}
+
+	&__btn {
+		margin-top: 3em;
+		margin-bottom: 10em;
+		padding: 1em 1.6em;
+		font-size: 1.4rem;
+		border: none;
+		background-color: var(--color-main);
+		border-radius: 8px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+		z-index: 1;
+		cursor: pointer;
+
+		&::before {
+			background-color: var(--color-second);
+		}
 	}
 }
 // contact
@@ -275,7 +297,7 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: stretch;
-		margin: 0 2em 2em;
+		margin: 0 2em 3em;
 
 		&-text {
 			margin-top: 1em;
@@ -327,6 +349,22 @@ body {
 			font-size: 18px;
 		}
 	}
+
+	.contact {
+		&__box {
+			display: flex;
+			flex-direction: row;
+			margin: 2em 2em 10em;
+		}
+
+		&__box-info {
+			margin: 0 4em 2em 0;
+		}
+
+		&__box-map {
+			margin-left: 2em;
+		}
+	}
 }
 @media (min-width: 992px) {
 	.aboutus {
@@ -358,24 +396,34 @@ body {
 				}
 			}
 		}
-	}
-	.offers {
-		.offers-tag {
-			font-size: 24px;
+
+		.offers {
+			.offers-tag {
+				font-size: 24px;
+			}
+
+			h3 {
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 20px;
+			}
+			.box-offers-text {
+				font-size: 20px;
+			}
 		}
 
-		h3 {
-			text-transform: uppercase;
-		}
-		p {
-			font-size: 20px;
-		}
-		.box-offers-text {
-			font-size: 20px;
+		.gallery__btn {
+			margin-bottom: 5em;
 		}
 	}
+	.contact {
+		&__box-map {
+			margin-left: 4em;
+		}
+	}
+	
 }
-
 @media (min-width: 1200px) {
 	.header {
 		&__heading {
@@ -420,6 +468,17 @@ body {
 			&:hover {
 				color: var(--color-main);
 			}
+		}
+	}
+
+	.contact {
+		
+		&__box-info {
+			margin: 0 6em 2em 0;
+		}
+
+		&__box-map {
+			margin-left: 6em;
 		}
 	}
 }

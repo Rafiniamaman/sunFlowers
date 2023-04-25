@@ -223,10 +223,15 @@ body {
   text-decoration: none;
 }
 
+.gallery {
+  padding: 2em 2em;
+}
 .gallery .carousel-item {
   position: relative;
-  height: 500px;
+  max-height: 500px;
+  max-width: 1200px;
   background-position: center;
+  background-size: cover;
 }
 .gallery .carousel-caption {
   position: absolute;
@@ -243,7 +248,24 @@ body {
   padding-bottom: 20px;
 }
 .gallery .card-img-top {
-  height: 200px;
+  height: 300px;
+}
+.gallery__btn {
+  margin-top: 3em;
+  margin-bottom: 10em;
+  padding: 1em 1.6em;
+  font-size: 1.4rem;
+  border: none;
+  background-color: var(--color-main);
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+.gallery__btn::before {
+  background-color: var(--color-second);
 }
 
 .contact__box {
@@ -256,7 +278,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  margin: 0 2em 2em;
+  margin: 0 2em 3em;
 }
 .contact__box-info-text {
   margin-top: 1em;
@@ -295,6 +317,17 @@ body {
   .offers .box-offers-text {
     font-size: 18px;
   }
+  .contact__box {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 2em 10em;
+  }
+  .contact__box-info {
+    margin: 0 4em 2em 0;
+  }
+  .contact__box-map {
+    margin-left: 2em;
+  }
 }
 @media (min-width: 992px) {
   .aboutus__info {
@@ -321,17 +354,23 @@ body {
   .aboutus__info-text-inside:last-child {
     padding-bottom: 0;
   }
-  .offers .offers-tag {
+  .aboutus .offers .offers-tag {
     font-size: 24px;
   }
-  .offers h3 {
+  .aboutus .offers h3 {
     text-transform: uppercase;
   }
-  .offers p {
+  .aboutus .offers p {
     font-size: 20px;
   }
-  .offers .box-offers-text {
+  .aboutus .offers .box-offers-text {
     font-size: 20px;
+  }
+  .aboutus .gallery__btn {
+    margin-bottom: 5em;
+  }
+  .contact__box-map {
+    margin-left: 4em;
   }
 }
 @media (min-width: 1200px) {
@@ -372,5 +411,11 @@ body {
   }
   .nav__desktop-item:hover {
     color: var(--color-main);
+  }
+  .contact__box-info {
+    margin: 0 6em 2em 0;
+  }
+  .contact__box-map {
+    margin-left: 6em;
   }
 }/*# sourceMappingURL=style.css.map */
